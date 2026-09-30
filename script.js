@@ -57,7 +57,7 @@ Promise.all([promise1,promise2,promise3]).then((result)=>{
 			
 	<tr>
 	<td>finial Result</td>
-	<td>${TotalTime.toFixed()}</td>
+	<td>${TotalTime.toFixed(3)}</td>
 	</tr>
 	`
 	
