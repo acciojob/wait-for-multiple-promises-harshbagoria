@@ -18,7 +18,7 @@ function createPromise() {
 });
 }
 
-   const startTime = performance.now();
+  // const startTime = performance.now();
 
  const promise1 = createPromise();
 const promise2 = createPromise();
@@ -26,9 +26,9 @@ const promise3 = createPromise();
 
 Promise.all([promise1,promise2,promise3]).then((result)=>{
 
-	const endTime = performance.now();
+	//const endTime = performance.now();
 
-	const TotalTime = (endTime-startTime)/1000;
+	const TotalTime = Math.max(...result);
     const output = document.getElementById("output");
 	output.innerHTML = "";
 	output.innerHTML += `
